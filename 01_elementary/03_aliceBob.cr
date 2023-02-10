@@ -1,4 +1,4 @@
-puts "Tell me ur name"
+p "Tell me ur name"
 name = gets.to_s.chomp
 
 kind = case name
