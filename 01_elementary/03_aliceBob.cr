@@ -1,4 +1,4 @@
-p "Tell me ur name"
+p "Tell me your name"
 name = gets
 
 kind = case name
