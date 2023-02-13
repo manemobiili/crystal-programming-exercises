@@ -1,5 +1,5 @@
 p "Tell me ur name"
-name = gets.to_s.chomp
+name = gets
 
 kind = case name
        when "Alice", "Bob" then
