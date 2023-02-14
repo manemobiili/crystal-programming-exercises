@@ -1,18 +1,12 @@
 p "Please choose a number"
 number = gets.not_nil!.chomp.to_i
 
-p "Type 's' to calculate the sum from 1 to #{number}"
-p "Type 'f' to calculate the #{number}'s factorial"
-p "Time to choose : "
+p "Type f to calculate the #{number}'s factorial"
+p "Type s to calculate the sum from 1 to #{number}"
 choice = gets.not_nil!
 
 case choice
-      when "s"
-        selectSum = (1..number).to_a
-        p selectSum.sum
-      exit
-
-      when "f"			# TODO calculate factorial in a more concise way
+      when "f"
         fact = 1
         i = 1
 
@@ -21,7 +15,12 @@ case choice
           i += 1
         end
  
-        p "factorial of #{number} is #{fact}"
+        p fact
+      exit
+
+      when "s"
+        numWalk = (1..number).to_a
+        p numWalk.sum
       exit
 
       else
