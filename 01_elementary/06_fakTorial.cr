@@ -1,6 +1,10 @@
 p "Please choose a number"
 number = gets.not_nil!.chomp.to_i
 
+if number > 12
+  p "WARNING: I can't handle more than 12 factorial!"
+end
+
 p "Type f to calculate the #{number}'s factorial"
 p "Type s to calculate the sum from 1 to #{number}"
 choice = gets.not_nil!
