@@ -2,4 +2,5 @@
   (1..12).each do |y|
     print "#{ x * y }\t"
   end
+ print "\n"
 end
