@@ -1,11 +1,11 @@
 p "Please choose a number"
-number = gets.not_nil!.chomp.to_i
+number = gets.not_nil!.to_i
 
   # Todo: calculate a set of products of number
   p "Type d to calculate the dividing factors of #{number}"
 
   # Factorials bigger than 12 cause an overflow
-  number <= 12 ? p "Type f to calculate the #{number}'s factorial" : p "Unfortunately 12 is the largest factorial i am able to calculate."
+  number <= 12 ? p "Type f to calculate the #{number}'s factorial" : p "Unfortunately 12 is the largest factorial i am able to calculate"
 
   p "Type s to calculate the sum from 1 to #{number}"
 
